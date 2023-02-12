@@ -36,16 +36,23 @@ internal class Program
                 Console.WriteLine();
             }
         }
-        void zmeyka(int[,] array)
-        {            
-     
-            int count = array.GetLength(0);
-            int num = 1;
-            
-         for (int index = 0; index < count-index; index++)
-         {
-            
-         
+        int[,] array = GetArray(5, 5, 00, 00);
+        PrintArray(array);
+        Console.WriteLine();
+        zmeyka(array);
+        PrintArray(array);
+    }
+
+    private static void zmeyka(int[,] array)
+    {
+
+        int count = array.GetLength(0);
+        int num = 1;
+
+        for (int index = 0; index < count - index; index++)
+        {
+
+
             for (int i = 0 + index; i < count - index; i++)
             {
                 array[0 + index, i] = num;
@@ -69,12 +76,6 @@ internal class Program
                 array[i, 0 + index] = num;
                 num++;
             }
-         }
         }
-        int[,] array = GetArray(5, 5, 0, 0);
-        PrintArray(array);
-        Console.WriteLine();
-        zmeyka(array);
-        PrintArray(array);
     }
 }
