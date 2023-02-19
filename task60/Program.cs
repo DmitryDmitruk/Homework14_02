@@ -38,5 +38,5 @@ void PrintArray(int[,,]inArray)
         Console.WriteLine();
     }
 }
-int[,,]array=GetArray(2,3,4,0,10);
+int[,,]array=GetArray(5,3,4,0,10);
 PrintArray(array);
